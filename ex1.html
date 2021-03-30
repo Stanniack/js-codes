@@ -20,16 +20,17 @@
 <body>
     <h1>Olá mundo é o caralio, só vamo</h1>
     <script>
-        window.alert('chama!');
-        window.confirm('Aceita ou me erra!');
+       // window.alert('chama!');
+       // window.confirm('Aceita ou me erra!');
         var r = window.prompt('Digita alguma coisa aí');
 
-        if (r != null) {
+        r != null ? alert(r) : alert('Não digitou nada, mané!'); 
+
+        if (r != null)
             window.alert(r);
-        } else {
+        else 
             window.alert('Não escreveu nada, mané!');
-        }
-        
+    
     </script>
 </body>
 
