@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <h1>Document Object Model - DOM</h1>
+    <p><strong>Parágrafo 1</strong></p>
+    <p>Parágrafo 2</p>
+    <p id='id1'>Parágrafo 3</p>
+    <script>
+        let r_getBy = document.getElementsByTagName('p')[0]
+        let r_selector = document.querySelector('p#id1')
+        r_getBy.style.color = 'blue'
+
+        document.write(r_getBy.innerText + '<br>')
+        document.write(r_getBy.innerHTML + '<br>')
+        document.write(r_selector.innerHTML)
+    </script>
+</body>
+
+</html>
