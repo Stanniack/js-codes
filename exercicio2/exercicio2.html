@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Verificar Idade</h1>
+    </header>
+
+    <section>
+        <div id="msg">
+            <p>Ano de nascimento: 
+                <input type="number" name="n1" id="n11" min="0">
+            </p>
+        
+            <p>
+                Sexo:
+                <input type="radio" name="radsex" id="mas" checked>
+                <label for="masc">Masculino</label>
+                <input type="radio" name="radsex" id="fem">
+                <label for="fem">Feminino</label>
+            </p>
+
+            <input type="button" value="Verificar" onclick="verify()">
+        </div>
+
+        <div id="msg2">
+            Mensagem aqui
+        </div>
+    </section>
+
+    <footer>Curso de JS</footer>
+
+    <script src="js.js"></script>
+
+
+</body>
+</html>
