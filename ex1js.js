@@ -1,5 +1,6 @@
-hello_world()
+let dia = new Date()
 
-function hello_world () {
-    console.log('Testando JavaScript no console!')
-}
+if (dia.getDay() == 6)
+    console.log('Sábadi')
+else
+    console.log('Não é sabádi')
