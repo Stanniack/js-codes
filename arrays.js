@@ -4,7 +4,13 @@ array.pop()
 array.shift()
 //array.sort()
 
-
+/* For each */
 array.forEach(item => {
     console.log(item)
 });
+
+console.log()
+
+/* For in */
+for (let pos in array)
+    console.log(array[pos])
