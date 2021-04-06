@@ -14,3 +14,7 @@ console.log()
 /* For in */
 for (let pos in array)
     console.log(array[pos])
+
+console.log()
+
+console.log(array.indexOf(5))
