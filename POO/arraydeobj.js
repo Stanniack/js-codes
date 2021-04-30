@@ -10,3 +10,7 @@ for (let i = 0; i < 5; i++) {
 
 for (const i in vet) 
     console.log(vet[i].name)
+
+vet.forEach((item) => {
+    console.log(item.name)
+})
