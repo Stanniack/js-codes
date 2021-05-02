@@ -7,4 +7,3 @@ const obj = {
 
 console.log(array.__proto__)
 console.log(obj.__proto__)
-console.log(Object.prototype)
