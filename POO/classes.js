@@ -22,8 +22,9 @@ class Pet {
     }
 }
 
-class Person {
-    constructor(name, age, borndate, weight, height, pet) {
+class Person extends Animal {
+    constructor(type, behaviour, name, age, borndate, weight, height, pet) {
+        super(type, behaviour)
         this._name = name
         this._age = age
         this._borndate = borndate
@@ -46,7 +47,8 @@ class Person {
 
 }
 
-let obj = new Person('Mateus', 24, '30/11/1996', 59, 173, new Pet('Thor', 12, 'Dog'))
+let obj = new Person('vertebrate', 'agressive', 'Mateus', 24, '30/11/1996', 59, 173, new Pet('Thor', 12, 'Dog'))
 
 console.log(obj._name)
 console.log(obj._pet._name)
+console.log(obj.behaviour)
