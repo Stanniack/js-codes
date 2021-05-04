@@ -54,9 +54,15 @@ Object.defineProperties(pet, {
     }
 })
 
-console.log(pet)
-
 /* Forma de ver as configurações de uma propriedade de objeto */
 console.log(Object.getOwnPropertyDescriptor(pet, '_name'))
 /* Sendo mais específico */
 console.log(Object.getOwnPropertyDescriptor(pet, '_name').writable)
+
+/* Torna o objeto imutável */
+Object.preventExtensions(pet)
+/* Não irá funcionar */
+pet._especie = 'Dog'
+console.log(pet)
+/* Verifica o estado do objeto mutável: dinâmico: true, adinâmico: false */
+console.log(Object.isExtensible(pet))
