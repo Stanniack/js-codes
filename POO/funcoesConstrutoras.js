@@ -31,3 +31,6 @@ function Person (name, age) {
 
 let obj = new Person('Mateus', 24)
 console.log(obj)
+
+/* Verificando se o obj pertence ao construtor Person */
+console.log(obj.constructor)
