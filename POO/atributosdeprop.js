@@ -13,7 +13,11 @@ Object.defineProperty(person, 'age', {
     /* Ignora */
     enumerable: false,
     /* Torna-se inconfigurável para algumas operações com o atributo */
-    configurable: false
+    configurable: false,
+    /* Altera valor */
+    value: 'João',
+    /* Torna o atributo uma constante */
+    writable: false
 })
 
 /* Não deleta pois o atributo já não está mais conifgurável, mas o valor dele pode ser modificado */
