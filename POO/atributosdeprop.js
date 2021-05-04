@@ -8,7 +8,6 @@ class Person {
 
 let person = new Person('Mateus', 24)
 
-/* Ignora/(Des)configura atributo escolhido */
 Object.defineProperty(person, 'age', {
     /* Ignora */
     enumerable: false,
@@ -32,3 +31,27 @@ console.log(delete person.age)
 
 for (atribute in person)
     console.log(atribute)
+
+
+/* ___________ */
+
+let pet = {}
+
+/* Definição de propriedades é necessário configurar manualmente todas as propridades pois elas são false como padrão */
+Object.defineProperties(pet, {
+    _name: {
+        value: 'Thor',
+        enumerable: true,
+        configurable: true,
+        writable: false
+    },
+
+    _age: {
+        value: 12,
+        enumerable: true,
+        configurable: true,
+        writable: false
+    }
+})
+
+console.log(pet)
