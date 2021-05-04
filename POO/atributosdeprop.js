@@ -1,6 +1,6 @@
 class Person {
     constructor (name, age) {
-        this.name = name
+        this._name = name
         this.age = age
     }
     
@@ -18,6 +18,12 @@ Object.defineProperty(person, 'age', {
     value: 'João',
     /* Torna o atributo uma constante */
     writable: false
+})
+
+/* Atribuindo getters e setters após a criação do objeto */
+Object.defineProperty(person, 'name', {
+    get: () => this._name,
+    set: value => this._name = value
 })
 
 /* Não deleta pois o atributo já não está mais conifgurável, mas o valor dele pode ser modificado */
