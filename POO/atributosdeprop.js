@@ -33,7 +33,7 @@ for (atribute in person)
     console.log(atribute)
 
 
-/* ___________ */
+/* ________________________________________________________________ */
 
 let pet = {}
 
@@ -55,3 +55,8 @@ Object.defineProperties(pet, {
 })
 
 console.log(pet)
+
+/* Forma de ver as configurações de uma propriedade de objeto */
+console.log(Object.getOwnPropertyDescriptor(pet, '_name'))
+/* Sendo mais específico */
+console.log(Object.getOwnPropertyDescriptor(pet, '_name').writable)
