@@ -1,8 +1,12 @@
-let array = [7, 1, 2, 3, 11, -1, 2, 5, 5]
+let array = [1, 2, 3]
+
+/* Pilha */
 array.push(100)
 array.pop()
+
+/* Fila: shift: retira do início, unshift: coloca no início */
 array.shift()
-//array.sort()
+array.unshift(100)
 
 /* For each */
 array.forEach(item => {
