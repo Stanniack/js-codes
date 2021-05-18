@@ -14,8 +14,6 @@ function Person (name, age) {
         _name = value
     }  
 
-
-
 }
 
 let person = new Person('Mateus', 24)
