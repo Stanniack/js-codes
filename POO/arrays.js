@@ -11,7 +11,7 @@ array.unshift(100)
 /* For each */
 array.forEach(item => {
     console.log(item)
-});
+})
 
 console.log()
 
